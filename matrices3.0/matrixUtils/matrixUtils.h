@@ -29,7 +29,7 @@ void matrixSub(int m, int n, int a[m][n], int b[m][n], int r[m][n]);
  * the result of the multiplication is saved in matrix r of size mxn in-place.
 */
 void matrixMul(int m, int n, int p, int a[m][n], int b[n][p], int r[m][p]);
-void matrixMulN(int N, int a[N][N], int b[N][N], int r[N][N]);
+void matrixMulN(int N, double *a, double *b, double *r);
 /*
  * Function: matrixT
  * Use matrixT(m, n, a, r)
@@ -37,7 +37,7 @@ void matrixMulN(int N, int a[N][N], int b[N][N], int r[N][N]);
  * Calculate the transpose of matrix a, of size mxn.
  * the result of the transposition is saved in matrix r, of size nxm, in-place.
 */
-void matrixT(int m, int n, int a[m][n], int r[n][m]);
+void matrixT(int m, int n, double *a, double *r);
 
 /*
  * Function: matrixPrint
@@ -45,7 +45,7 @@ void matrixT(int m, int n, int a[m][n], int r[n][m]);
  * ----------------------------
  * Print the matrix a in standard output
 */
-void matrixPrint(int m, int n, int a[m][n]);
+void matrixPrint(int m, int n, double *a);
 
 /*
  * Function: matrixFill
@@ -53,9 +53,9 @@ void matrixPrint(int m, int n, int a[m][n]);
  * ----------------------------
  * Fill the matrix a with data from standard input
 */
-void matrixFill(int m, int n, int a[m][n]);
+void matrixFill(int m, int n, double *a);
 
 
-void matrixInit(int m, int n, int a[m][n]);
-void matrixInitN(int N, int a[N][N]);
+void matrixInit(int m, int n, double *a);
+void matrixInitN(int N, double *a, double *b, double *c);
 #endif
