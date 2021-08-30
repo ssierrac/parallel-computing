@@ -1,3 +1,4 @@
 *.o
 *.out
 venv/
+.ipynb_checkpoints/
