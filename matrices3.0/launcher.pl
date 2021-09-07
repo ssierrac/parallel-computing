@@ -12,9 +12,9 @@ foreach $exe (@ejecutables){
     foreach $size (@matrixSize){
         $fichero = "$path"."outputs/$exe-size$size.txt";
         for($i = 0; $i < $repetition; $i++){
-            print("$fichero\n");
             system("$path$exe $size >> $fichero\n");
         }
+        print("$fichero\n");
     }
 }
 
