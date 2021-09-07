@@ -10,4 +10,4 @@ matrixAPP:
 	$(GCC) $(FLAGS) -o $@.out $@.o matrixUtils/matrixUtils.o benchmarkUtils/timeUtils.o
 
 clean:
-	$(RM) $(PROGRAMS) *.o *.out */*.o outputs/*
+	$(RM) $(PROGRAMS) *.o *.out */*.o outputs/*.txt
