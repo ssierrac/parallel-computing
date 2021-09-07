@@ -14,7 +14,7 @@ foreach $exe (@ejecutables){
         foreach $thread (@threads){
             $fichero = "$path"."outputs/$exe-size$size-T$thread.txt";
             for($i = 0; $i < $repetition; $i++){
-                system("$path$exe $size >> $fichero\n");
+                system("$path$exe $size $thread >> $fichero\n");
             }
             print("$fichero");
         }
