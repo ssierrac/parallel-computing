@@ -6,7 +6,7 @@
 $repetition = 30;
 $path = "/home/sebastian/workspace-cs/computacion-paralela-y-dis/matrices3.0/";
 @ejecutables = ("matrixAPP.out");
-@matrixSize = ("50", "100", "200", "300", "400", "500", "600", "700", "800", "1000", "1200", "2000", "4000");
+@matrixSize = ("100", "200", "400", "800", "1000", "1200", "2000", "4000");
 @threads = ("1", "2", "4", "8");
 
 foreach $exe (@ejecutables){
@@ -16,7 +16,7 @@ foreach $exe (@ejecutables){
             for($i = 0; $i < $repetition; $i++){
                 system("$path$exe $size $thread >> $fichero\n");
             }
-            print("$fichero");
+            print("$fichero\n");
         }
     }
 }
