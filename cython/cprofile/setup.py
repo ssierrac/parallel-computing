@@ -17,6 +17,8 @@ extensions = [
     ),
     Extension("mandel_cyt05", 
         ["mandel_cyt05.pyx"],
+        extra_compile_args=['-fopenmp'],
+        extra_link_args=['-fopenmp'],
     )
 ]
 
